@@ -103,6 +103,7 @@ pyvenv.cfg
 pip-selfcheck.json
 
 config.ini
+
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/PaLmScrape.iml

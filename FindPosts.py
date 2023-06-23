@@ -8,7 +8,11 @@ config.read('config.ini')
 limit = int(config["Reddit"]["LIMIT"])
 time_filter = str(config["Reddit"]["TIME_FILTER"])
 
-reddit = praw.Reddit(client_id=config["Reddit"]["CLIENT_ID"], client_secret=config["Reddit"]["CLIENT_SECRET"], password=config["Reddit"]["PASSWORD"], user_agent=config["Reddit"]["USER_AGENT"], username=config["Reddit"]["USERNAME"])
+reddit = praw.Reddit(client_id=config["Reddit"]["CLIENT_ID"],
+                     client_secret=config["Reddit"]["CLIENT_SECRET"],
+                     password=config["Reddit"]["PASSWORD"],
+                     user_agent=config["Reddit"]["USER_AGENT"],
+                     username=config["Reddit"]["USERNAME"])
 # If you don't use password but remove the section of "password=config["Reddit"]["PASSWORD"],"
 
 posts = []

@@ -6,7 +6,11 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-reddit = praw.Reddit(client_id=config["Reddit"]["CLIENT_ID"], client_secret=config["Reddit"]["CLIENT_SECRET"], password=config["Reddit"]["PASSWORD"], user_agent=config["Reddit"]["USER_AGENT"], username=config["Reddit"]["USERNAME"])
+reddit = praw.Reddit(client_id=config["Reddit"]["CLIENT_ID"],
+                     client_secret=config["Reddit"]["CLIENT_SECRET"],
+                     password=config["Reddit"]["PASSWORD"],
+                     user_agent=config["Reddit"]["USER_AGENT"],
+                     username=config["Reddit"]["USERNAME"])
 
 posts = pd.read_csv(f'{config["Reddit"]["SUBREDDIT"]}.csv')
 

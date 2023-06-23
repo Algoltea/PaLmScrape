@@ -1,4 +1,4 @@
-# Reddit Webscraping
+# PaLm Scrape
 
 This is a GitHub repository for a Python project that scrapes data from Reddit using the PRAW library. 
 The project allows you to specify a subreddit, a time period, and a number of posts to scrape. 

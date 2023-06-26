@@ -27,3 +27,4 @@ Run the files in the order of FindPosts.py -> ScrapePosts.py -> Main.py .
 This should be fixed in the future but not at the moment. 
 
 I should also add a forced rate limit of 50 a minute, but haven't yet.
+*Supposedly PRAW actually has the rate limit built in*
